@@ -1362,21 +1362,27 @@ sftp = ["paramiko"]
 
 [[package]]
 name = "django-stubs"
-version = "1.8.0"
+version = "1.14.0"
 description = "Mypy stubs for Django"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 files = [
-    {file = "django-stubs-1.8.0.tar.gz", hash = "sha256:717967d7fee0a6af0746724a0be80d72831a982a40fa8f245a6a46f4cafd157b"},
-    {file = "django_stubs-1.8.0-py3-none-any.whl", hash = "sha256:bde9e44e3c4574c2454e74a3e607cc3bc23b0441bb7d1312cd677d5e30984b74"},
+    {file = "django-stubs-1.14.0.tar.gz", hash = "sha256:d53bcd4975a54ca5c9abbbd33b61f40d44191971018f2ea54f73b0a6a99e1a8b"},
+    {file = "django_stubs-1.14.0-py3-none-any.whl", hash = "sha256:b081d64d923171f79d4e57899b0980da847e4046b91166e3658a6151645a36c5"},
 ]
 
 [package.dependencies]
 django = "*"
-django-stubs-ext = "*"
-mypy = ">=0.790"
+django-stubs-ext = ">=0.7.0"
+mypy = ">=0.980"
+tomli = "*"
+types-pytz = "*"
+types-PyYAML = "*"
 typing-extensions = "*"
+
+[package.extras]
+compatible-mypy = ["mypy (>=0.991,<1.0)"]
 
 [[package]]
 name = "django-stubs-ext"
@@ -3581,6 +3587,7 @@ optional = false
 python-versions = "*"
 files = [
     {file = "python-crontab-2.6.0.tar.gz", hash = "sha256:1e35ed7a3cdc3100545b43e196d34754e6551e7f95e4caebbe0e1c0ca41c2f1b"},
+    {file = "python_crontab-2.6.0-py3-none-any.whl", hash = "sha256:f308a64b8b1d072da4a235e9320398a242e92d080c1d8143bd0c600b24e160f8"},
 ]
 
 [package.dependencies]
@@ -4281,6 +4288,18 @@ files = [
 ]
 
 [[package]]
+name = "types-pyyaml"
+version = "6.0.12.3"
+description = "Typing stubs for PyYAML"
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-PyYAML-6.0.12.3.tar.gz", hash = "sha256:17ce17b3ead8f06e416a3b1d5b8ddc6cb82a422bb200254dd8b469434b045ffc"},
+    {file = "types_PyYAML-6.0.12.3-py3-none-any.whl", hash = "sha256:879700e9f215afb20ab5f849590418ab500989f83a57e635689e1d50ccc63f0c"},
+]
+
+[[package]]
 name = "types-redis"
 version = "4.3.21.6"
 description = "Typing stubs for redis"
@@ -4909,5 +4928,5 @@ test = ["pytest"]
 
 [metadata]
 lock-version = "2.0"
-  python-versions = "~3.9"
-content-hash = "b5fee93529eea2e1b8112121c7be26f4012074ea4462bf5fc7bb3b628a57401d"
+python-versions = "~3.9"
+content-hash = "24a9e764071d65d70c6d02ffb446c8660a5c2a26fc37a547bc0f722c6c192512"
