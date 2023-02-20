@@ -3581,6 +3581,7 @@ optional = false
 python-versions = "*"
 files = [
     {file = "python-crontab-2.6.0.tar.gz", hash = "sha256:1e35ed7a3cdc3100545b43e196d34754e6551e7f95e4caebbe0e1c0ca41c2f1b"},
+    {file = "python_crontab-2.6.0-py3-none-any.whl", hash = "sha256:f308a64b8b1d072da4a235e9320398a242e92d080c1d8143bd0c600b24e160f8"},
 ]
 
 [package.dependencies]
@@ -4258,14 +4259,14 @@ files = [
 
 [[package]]
 name = "types-python-dateutil"
-version = "2.8.19.4"
+version = "2.8.19.7"
 description = "Typing stubs for python-dateutil"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "types-python-dateutil-2.8.19.4.tar.gz", hash = "sha256:351a8ca9afd4aea662f87c1724d2e1ae59f9f5f99691be3b3b11d2393cd3aaa1"},
-    {file = "types_python_dateutil-2.8.19.4-py3-none-any.whl", hash = "sha256:722a55be8e2eeff749c3e166e7895b0e2f4d29ab4921c0cff27aa6b997d7ee2e"},
+    {file = "types-python-dateutil-2.8.19.7.tar.gz", hash = "sha256:7af5a5d1b80ab1dfa0ba4d879facb382e836a62c2d408c2a509be4680fd8b1c8"},
+    {file = "types_python_dateutil-2.8.19.7-py3-none-any.whl", hash = "sha256:669751e1e6d4f3dbbff471231740e7ecdae2135b604383e477fe31fd56223967"},
 ]
 
 [[package]]
@@ -4909,5 +4910,5 @@ test = ["pytest"]
 
 [metadata]
 lock-version = "2.0"
-  python-versions = "~3.9"
+python-versions = "~3.9"
 content-hash = "b5fee93529eea2e1b8112121c7be26f4012074ea4462bf5fc7bb3b628a57401d"
